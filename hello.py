@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.secret_key = 'tangle'
 # 因为编码问题这里将mysql改为mysql+mysqlconnector，解决warning:1366问题，在这之前需要pip install mysql+mysqlconnector
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:225820@127.0.0.1/flask_sql_demo'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:******@127.0.0.1/flask_sql_demo'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
