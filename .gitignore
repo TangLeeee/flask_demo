@@ -1,3 +1,6 @@
 .git
+.idea
+
+__pycache__/
 
 # 暂时没有ignore的东西
